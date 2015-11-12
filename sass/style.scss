@@ -1,0 +1,515 @@
+/* ==========================================================================
+   Phone Boxes
+   Designer: Tom Wicks
+   ========================================================================== */
+
+
+@import 'bourbon/bourbon';
+
+
+/* ==========================================================================
+   SASS Configs
+   ========================================================================== */
+
+@include font-face(larish, Fonts/larishneue);
+@include font-face(maison, Fonts/maisonneue-light-webfont);
+@include font-face(maisonbold, Fonts/maisonneuebold-webfont);
+
+$main-font: "larishneue", sans-serif;
+$second-font: "maison", serif;
+$third-font: "maisonbold", serif;
+
+
+
+  $base_font_size: 18px;
+
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none; } }
+
+q {
+  &:before, &:after {
+    content: '';
+    content: none; } }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*:focus {
+    outline: none;
+  }
+
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin Opacity($value){
+  $IEValue: $value*100;
+  opacity: $value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+  filter: alpha(opacity=$IEValue);
+}
+
+$breakpoints: (
+  "extra-small" 500px,
+  "small" 730px,
+  "medium" 1047px,
+  "large" 1300px,
+  "extra-large" 1450px,
+  "extra-extra-large" 1800px
+);
+
+@mixin mq($size, $type: "min-width") {
+  @each $breakpoint in $breakpoints {
+    @if ($size == nth($breakpoint, 1)) {
+      @media ($type: nth($breakpoint, 2)) {
+        @content;
+      }
+    }
+  }
+}
+/* ==========================================================================
+   Colour
+   ========================================================================== */
+
+$tory: #407CC9;
+$labour: #FF5B34;
+$snp: #FFC842;
+$libdem: #FD9532;
+$green: #01B275;
+$type: #343434;
+$typeLight: #6D6D6D;
+
+.tory {
+  color: $tory;
+  &:before {
+    background: $tory;
+  }
+}
+
+.labour {
+  &:before {
+    background: $labour;
+  }
+}
+
+.snp {
+  &:before {
+    background: $snp;
+  }
+}
+
+.libdem {
+  &:before {
+    background: $libdem;
+  }
+}
+
+.green {
+  &:before {
+    background: $green;
+  }
+}
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+body {
+  font-family: $main-font;
+  font-size-adjust:0.508;
+  font-weight: 200;
+  font-style:normal;
+  overflow-y: hidden;
+  color: $type;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.266em;
+}
+
+h2 {
+  font-size: 1.266em;
+  font-family: $main-font;
+  margin: 0.5em 0;
+  color: $type;
+}
+
+h3 {
+  font-size: 1em;
+  margin-bottom: 40px;
+  font-family: $second-font;
+  color: $typeLight;
+}
+
+h4 {
+  font-family: $second-font;
+  width: 100%;
+  font-size: 1.266em;
+  line-height: 1.4em;
+  color: $type;
+}
+
+small, .font_small {font-size: 0.889em;}
+
+p {
+  color: $typeLight;
+  font-size: 1em;
+  font-family: $second-font;
+  margin: 1em 0;
+  line-height: 1.45em;
+
+  a {
+    color: darken($type, 10%);
+
+    &:hover {
+      color: $tory;
+    }
+  }
+}
+
+
+blockquote {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    font-weight: 300;
+    font-size: 1em;
+    font-style: italic;
+  }
+
+.footnote {
+  border-bottom: 0;
+
+  &:hover {
+    @include transition(all, 0.4s, ease-in-out);
+    cursor: pointer;
+  }
+}
+
+span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+h1 {
+  display: inline;
+  float: left;
+}
+
+nav {
+  display: inline;
+  float: right;
+
+  ul li {
+    float: left;
+    margin: 0 10px;
+    display: inline;
+    font-family: $second-font;
+  }
+
+  ul li.active {
+    border-bottom: 1px solid $typeLight;
+    padding-bottom: 3px;
+  }
+}
+
+/* ==========================================================================
+   sidebar
+   ========================================================================== */
+
+.sidebar {
+  box-sizing: border-box;
+  padding: 70px 100px;
+  width: 50%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background: #fff;
+
+  .poltical-holder {
+    clear: both;
+    width: 100%;
+    margin-top: 70px;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    &.inactive {
+      display: none;
+    }
+  }
+
+  @include mq("medium", "max-width") {
+    padding: 70px 50px;
+    width: 60%;
+  }
+
+  @include mq("small", "max-width") {
+    width: 100%;
+    margin-top: 50vh;
+    position: relative;
+    z-index: 10000;
+    padding: 70px 80px;
+  }
+
+  @include mq("small", "max-width") {
+    width: 100%;
+    margin-top: 70vh;
+    position: relative;
+    z-index: 10000;
+    padding: 40px 25px;
+    height: auto;
+    min-height: 100vh;
+
+    h1 {
+      display: none;
+    }
+
+    nav {
+      float: left;
+    }
+
+    nav ul li:first-child {
+      margin: 0 10px 0 0;
+    }
+  }
+}
+
+.map-legend {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  overflow: none;
+  left: 0;
+  width: auto;
+  font-family: $second-font;
+  height: 40px;
+  background: #fff;
+
+  h4 {
+    display: none;
+  }
+
+  ul li {
+    float: left;
+    margin-left: 20px;
+    padding: 12px 0;
+
+    &:last-child {
+      padding-right: 25px;
+    }
+
+    &:before {
+      margin-right: 17px;
+      margin-top: 1px;
+      content: "";
+      display: block;
+      height: 12px;
+      width: 12px;
+      float: left;
+      @include border-radius(100%);
+    }
+  }
+
+  .tory, .labour, .snp, .libdem, .green {
+    color: $type;
+  }
+
+  @include mq("medium", "max-width") {
+    padding: 15px 20px;
+    height: auto;
+
+    ul li {
+      margin-left: 0;
+      float: none;
+      padding: 5px 5px;
+    }
+  }
+
+  @include mq("small", "max-width") {
+
+    h4 {
+      display: block;
+      font-size: 1em;
+      float: left;
+      width: intrinsic;
+      margin-bottom: 1em;
+    }
+
+    .eye-icon {
+      float: left;
+      display: block;
+      margin-left: 10px;
+      width: 39px;
+      height: 18px;
+      background-image: url("../img/eye-active.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: 0 0;
+      margin-top: 2px;
+      content: "";
+    }
+
+    li {
+      clear: both;
+    }
+
+    &.inactive {
+      padding: 15px 20px 5px 20px;
+      height: 30px;
+      margin-bottom: 0;
+
+      .eye-icon {
+        background-image: url("../img/eye.svg");
+      }
+
+      ul li {
+        padding: 0 5px;
+        display: none;
+      }
+    }
+  }
+}
+
+
+/* ==========================================================================
+   Map
+   ========================================================================== */
+
+.custom-popup .leaflet-popup-content-wrapper {
+  background:#363b3b;
+  font-size:16px;
+  line-height:24px;
+  padding: 0px;
+  margin: 0;
+  height: 125px;
+  width: 325px;
+  @include border-radius(0);
+  font-family: $second-font;
+}
+
+.custom-popup .leaflet-popup-content {
+  padding: 0;
+  color: #fff;
+  font-family: $second-font;
+
+  img {
+    width: 125px;
+    height: 125px;
+    padding: 0px;
+    margin: 0;
+    float: left;
+  }
+
+  .info {
+    width: 190px;
+    float: left;
+    height: 100px;
+    padding: 20px;
+
+    h2 {
+      padding: 0;
+      color: #fff;
+    }
+
+    span {
+      font-size: 0.9em;
+      padding: 0;
+    }
+  }
+
+}
+
+.custom-popup .leaflet-popup-tip-container {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.leaflet-bar {
+  border: 0 !important;
+  border-radius: 0px !important;
+}
+
+.custom-popup .leaflet-popup-tip {
+  border-left:15px solid transparent;
+  border-right:15px solid transparent;
+  border-top:15px solid #363b3b;
+  left: 45.5%;
+  position: absolute;
+  }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */

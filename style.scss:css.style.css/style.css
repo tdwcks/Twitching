@@ -1,0 +1,251 @@
+/* ==========================================================================
+   Phone Boxes
+   Designer: Tom Wicks
+   ========================================================================== */
+/* ==========================================================================
+   SASS Configs
+   ========================================================================== */
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*:focus {
+  outline: none; }
+
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+/* ==========================================================================
+   Colour
+   ========================================================================== */
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+body {
+  background: #f1f1ef;
+  font-family: "Relative Book", sans-serif;
+  font-size-adjust: 0.508;
+  font-weight: 200;
+  font-style: normal;
+  overflow-y: hidden; }
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  font-weight: 300;
+  font-size: 2.5em;
+  line-height: 1.2em;
+  margin-bottom: 0.5em; }
+
+h2 {
+  font-size: 2em;
+  line-height: 1.125em;
+  margin-bottom: 0.5em; }
+
+h3 {
+  font-size: 1.875em;
+  line-height: 1.2em;
+  margin-bottom: 0.4em; }
+
+h4 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 0.5em; }
+
+h5 {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  margin-bottom: 0.6em; }
+
+.small_print {
+  font-size: 0.875em;
+  line-height: 1.6em; }
+
+p {
+  font-weight: 300;
+  font-size: 1.125em;
+  line-height: 1.687em; }
+  p a {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+  p strong {
+    font-weight: bold; }
+  p em {
+    font-style: italic; }
+  p .side-matter-ref {
+    border: none; }
+    p .side-matter-ref sup {
+      font-size: 0.6em;
+      margin-left: 0; }
+
+::selection {
+  background: #f1f1ef;
+  /* WebKit/Blink Browsers */ }
+
+::-moz-selection {
+  background: #f1f1ef;
+  /* Gecko Browsers */ }
+
+blockquote {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  font-weight: 300;
+  font-size: 1em;
+  font-style: italic; }
+
+.footnote {
+  border-bottom: 0; }
+  .footnote:hover {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer; }
+
+span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px; }
+
+.italic {
+  font-style: italic; }
+
+a {
+  text-decoration: none; }
+
+/* ==========================================================================
+   Structual
+   ========================================================================== */
+.cntr {
+  max-width: 1175px;
+  width: 90%;
+  position: relative;
+  display: block;
+  margin: 0 auto; }
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+.btn_1 {
+  float: right;
+  color: #fff;
+  padding: 13px 18px 10px 18px;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  margin-left: 3em;
+  margin-top: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+/* ==========================================================================
+   Map
+   ========================================================================== */
+.custom-popup .leaflet-popup-content-wrapper {
+  background: #363b3b;
+  font-size: 16px;
+  font-family: "Relative Book", sans-serif;
+  line-height: 24px;
+  padding: 0px;
+  margin: 0;
+  height: 125px;
+  width: 325px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0; }
+
+.custom-popup .leaflet-popup-content {
+  padding: 0;
+  font-family: "Relative Book", sans-serif;
+  color: #fff; }
+  .custom-popup .leaflet-popup-content img {
+    width: 125px;
+    height: 125px;
+    padding: 0px;
+    margin: 0;
+    float: left; }
+  .custom-popup .leaflet-popup-content .info {
+    width: 190px;
+    float: left;
+    height: 100px;
+    padding: 20px; }
+    .custom-popup .leaflet-popup-content .info h2 {
+      padding: 0;
+      color: #fff; }
+    .custom-popup .leaflet-popup-content .info span {
+      font-size: 0.9em;
+      padding: 0;
+      color: #e6e7e4; }
+
+.custom-popup .leaflet-popup-tip-container {
+  padding: 0;
+  width: 100%;
+  margin: 0; }
+
+.custom-popup .leaflet-popup-tip {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #363b3b;
+  left: 45.5%;
+  position: absolute; }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+/*# sourceMappingURL=style.css.map */

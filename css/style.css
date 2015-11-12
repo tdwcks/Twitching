@@ -1,0 +1,369 @@
+/* ==========================================================================
+   Phone Boxes
+   Designer: Tom Wicks
+   ========================================================================== */
+/* ==========================================================================
+   SASS Configs
+   ========================================================================== */
+@font-face {
+  font-family: larish;
+  font-weight: normal;
+  font-style: normal;
+  src: url("Fonts/larishneue.eot");
+  src: url("Fonts/larishneue.eot?#iefix") format("embedded-opentype"), url("Fonts/larishneue.woff") format("woff"), url("Fonts/larishneue.ttf") format("truetype"), url("Fonts/larishneue.svg#larish") format("svg"); }
+@font-face {
+  font-family: maison;
+  font-weight: normal;
+  font-style: normal;
+  src: url("Fonts/maisonneue-light-webfont.eot");
+  src: url("Fonts/maisonneue-light-webfont.eot?#iefix") format("embedded-opentype"), url("Fonts/maisonneue-light-webfont.woff") format("woff"), url("Fonts/maisonneue-light-webfont.ttf") format("truetype"), url("Fonts/maisonneue-light-webfont.svg#maison") format("svg"); }
+@font-face {
+  font-family: maisonbold;
+  font-weight: normal;
+  font-style: normal;
+  src: url("Fonts/maisonneuebold-webfont.eot");
+  src: url("Fonts/maisonneuebold-webfont.eot?#iefix") format("embedded-opentype"), url("Fonts/maisonneuebold-webfont.woff") format("woff"), url("Fonts/maisonneuebold-webfont.ttf") format("truetype"), url("Fonts/maisonneuebold-webfont.svg#maisonbold") format("svg"); }
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*:focus {
+  outline: none; }
+
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+/* ==========================================================================
+   Colour
+   ========================================================================== */
+.tory {
+  color: #407CC9; }
+  .tory:before {
+    background: #407CC9; }
+
+.labour:before {
+  background: #FF5B34; }
+
+.snp:before {
+  background: #FFC842; }
+
+.libdem:before {
+  background: #FD9532; }
+
+.green:before {
+  background: #01B275; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+body {
+  font-family: "larishneue", sans-serif;
+  font-size-adjust: 0.508;
+  font-weight: 200;
+  font-style: normal;
+  overflow-y: hidden;
+  color: #343434; }
+
+h1 {
+  margin-top: 0;
+  font-size: 1.266em; }
+
+h2 {
+  font-size: 1.266em;
+  font-family: "larishneue", sans-serif;
+  margin: 0.5em 0;
+  color: #343434; }
+
+h3 {
+  font-size: 1em;
+  margin-bottom: 40px;
+  font-family: "maison", serif;
+  color: #6D6D6D; }
+
+h4 {
+  font-family: "maison", serif;
+  width: 100%;
+  font-size: 1.266em;
+  line-height: 1.4em;
+  color: #343434; }
+
+small, .font_small {
+  font-size: 0.889em; }
+
+p {
+  color: #6D6D6D;
+  font-size: 1em;
+  font-family: "maison", serif;
+  margin: 1em 0;
+  line-height: 1.45em; }
+  p a {
+    color: #1b1b1b; }
+    p a:hover {
+      color: #407CC9; }
+
+blockquote {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  font-weight: 300;
+  font-size: 1em;
+  font-style: italic; }
+
+.footnote {
+  border-bottom: 0; }
+  .footnote:hover {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer; }
+
+span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px; }
+
+.italic {
+  font-style: italic; }
+
+a {
+  text-decoration: none; }
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+h1 {
+  display: inline;
+  float: left; }
+
+nav {
+  display: inline;
+  float: right; }
+  nav ul li {
+    float: left;
+    margin: 0 10px;
+    display: inline;
+    font-family: "maison", serif; }
+  nav ul li.active {
+    border-bottom: 1px solid #6D6D6D;
+    padding-bottom: 3px; }
+
+/* ==========================================================================
+   sidebar
+   ========================================================================== */
+.sidebar {
+  box-sizing: border-box;
+  padding: 70px 100px;
+  width: 50%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background: #fff; }
+  .sidebar .poltical-holder {
+    clear: both;
+    width: 100%;
+    margin-top: 70px;
+    display: none; }
+    .sidebar .poltical-holder.active {
+      display: block; }
+    .sidebar .poltical-holder.inactive {
+      display: none; }
+  @media (max-width: 1047px) {
+    .sidebar {
+      padding: 70px 50px;
+      width: 60%; } }
+  @media (max-width: 730px) {
+    .sidebar {
+      width: 100%;
+      margin-top: 50vh;
+      position: relative;
+      z-index: 10000;
+      padding: 70px 80px; } }
+  @media (max-width: 730px) {
+    .sidebar {
+      width: 100%;
+      margin-top: 70vh;
+      position: relative;
+      z-index: 10000;
+      padding: 40px 25px;
+      height: auto;
+      min-height: 100vh; }
+      .sidebar h1 {
+        display: none; }
+      .sidebar nav {
+        float: left; }
+      .sidebar nav ul li:first-child {
+        margin: 0 10px 0 0; } }
+
+.map-legend {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  overflow: none;
+  left: 0;
+  width: auto;
+  font-family: "maison", serif;
+  height: 40px;
+  background: #fff; }
+  .map-legend h4 {
+    display: none; }
+  .map-legend ul li {
+    float: left;
+    margin-left: 20px;
+    padding: 12px 0; }
+    .map-legend ul li:last-child {
+      padding-right: 25px; }
+    .map-legend ul li:before {
+      margin-right: 17px;
+      margin-top: 1px;
+      content: "";
+      display: block;
+      height: 12px;
+      width: 12px;
+      float: left;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+      border-radius: 100%; }
+  .map-legend .tory, .map-legend .labour, .map-legend .snp, .map-legend .libdem, .map-legend .green {
+    color: #343434; }
+  @media (max-width: 1047px) {
+    .map-legend {
+      padding: 15px 20px;
+      height: auto; }
+      .map-legend ul li {
+        margin-left: 0;
+        float: none;
+        padding: 5px 5px; } }
+  @media (max-width: 730px) {
+    .map-legend h4 {
+      display: block;
+      font-size: 1em;
+      float: left;
+      width: intrinsic;
+      margin-bottom: 1em; }
+    .map-legend .eye-icon {
+      float: left;
+      display: block;
+      margin-left: 10px;
+      width: 39px;
+      height: 18px;
+      background-image: url("../img/eye-active.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: 0 0;
+      margin-top: 2px;
+      content: ""; }
+    .map-legend li {
+      clear: both; }
+    .map-legend.inactive {
+      padding: 15px 20px 5px 20px;
+      height: 30px;
+      margin-bottom: 0; }
+      .map-legend.inactive .eye-icon {
+        background-image: url("../img/eye.svg"); }
+      .map-legend.inactive ul li {
+        padding: 0 5px;
+        display: none; } }
+
+/* ==========================================================================
+   Map
+   ========================================================================== */
+.custom-popup .leaflet-popup-content-wrapper {
+  background: #363b3b;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0px;
+  margin: 0;
+  height: 125px;
+  width: 325px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  font-family: "maison", serif; }
+
+.custom-popup .leaflet-popup-content {
+  padding: 0;
+  color: #fff;
+  font-family: "maison", serif; }
+  .custom-popup .leaflet-popup-content img {
+    width: 125px;
+    height: 125px;
+    padding: 0px;
+    margin: 0;
+    float: left; }
+  .custom-popup .leaflet-popup-content .info {
+    width: 190px;
+    float: left;
+    height: 100px;
+    padding: 20px; }
+    .custom-popup .leaflet-popup-content .info h2 {
+      padding: 0;
+      color: #fff; }
+    .custom-popup .leaflet-popup-content .info span {
+      font-size: 0.9em;
+      padding: 0; }
+
+.custom-popup .leaflet-popup-tip-container {
+  padding: 0;
+  width: 100%;
+  margin: 0; }
+
+.leaflet-bar {
+  border: 0 !important;
+  border-radius: 0px !important; }
+
+.custom-popup .leaflet-popup-tip {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #363b3b;
+  left: 45.5%;
+  position: absolute; }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+/*# sourceMappingURL=style.css.map */

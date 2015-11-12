@@ -1,0 +1,27 @@
+_prefs: 
+  mapid: tdwcks.abbd3410
+  saveCenter: true
+_properties: 
+  bridge: 
+    "group-by": layer
+attribution: ''
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -0.003
+  - 51.5002
+  - 15
+description: ''
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 22
+minzoom: 0
+name: ''
+source: "mapbox:///mapbox.mapbox-streets-v5"
+styles: 
+  - style.mss
+template: ''

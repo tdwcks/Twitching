@@ -21,7 +21,7 @@
   <div class="map-legend inactive">
 
       <ul>
-          <h4>Strangers Journey</h4>
+          <h4>Strangerzz Journey</h4>
           <div class="eye-icon"></div>
           <li class="tory">Conservative</li>
           <li class="labour">Labour</li>

@@ -141,7 +141,7 @@ var geoJson = [{
         "date": "28th October 2015",
         "description": "The hand painted signage is visible throughout the vast stairways and hidden nooks and crannies. There’s rarely two items the same (chesterfield an exception) and an overwhelming amount of treasures to be uncovered. Ranging from antiques, vintage and secondhand items to even a ‘Kermit’ the frog amusement ride. If you favour upcycling or just wish to collect the weird and wonderful, this place is definitely worth a visit! You are likely to be greeted outside by Jim and Murphy (the border terrier) and will certainly get a warm and friendly welcome on entering. The man and dog duo add character to this charming place and there’s always a bargain to be had and an opportunity to haggle!",
         "icon": {
-            "iconUrl": "img/lib-icon .png",
+            "iconUrl": "img/lib-icon.png",
             "iconSize": [30, 30], // size of the icon
             "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
             "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor

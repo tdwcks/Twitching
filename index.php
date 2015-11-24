@@ -1,9 +1,9 @@
 <html>
 <head>
 <meta charset=utf-8 />
-<title>Strangers Journey → Notes from inside Westminster</title>
+<title>Strangers Journey → Notes from the Westminster Bubble</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
@@ -39,7 +39,7 @@
 
       <div class="sidebar-container">
 
-          <h1 class="tory">Strangers Joruney</h1>
+          <h1 class="tory">Strangers Journey</h1>
 
           <nav>
               <ul>

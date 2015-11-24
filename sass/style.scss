@@ -11,9 +11,9 @@
    SASS Configs
    ========================================================================== */
 
-@include font-face(larish, Fonts/larishneue);
-@include font-face(maison, Fonts/maisonneue-light-webfont);
-@include font-face(maisonbold, Fonts/maisonneuebold-webfont);
+@include font-face(larish, fonts/larishneue);
+@include font-face(maison, fonts/maisonneue-light-webfont);
+@include font-face(maisonbold, fonts/maisonneuebold-webfont);
 
 $main-font: "larishneue", sans-serif;
 $second-font: "maison", serif;

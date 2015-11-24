@@ -9,20 +9,20 @@
   font-family: larish;
   font-weight: normal;
   font-style: normal;
-  src: url("Fonts/larishneue.eot");
-  src: url("Fonts/larishneue.eot?#iefix") format("embedded-opentype"), url("Fonts/larishneue.woff") format("woff"), url("Fonts/larishneue.ttf") format("truetype"), url("Fonts/larishneue.svg#larish") format("svg"); }
+  src: url("fonts/larishneue.eot");
+  src: url("fonts/larishneue.eot?#iefix") format("embedded-opentype"), url("fonts/larishneue.woff") format("woff"), url("fonts/larishneue.ttf") format("truetype"), url("fonts/larishneue.svg#larish") format("svg"); }
 @font-face {
   font-family: maison;
   font-weight: normal;
   font-style: normal;
-  src: url("Fonts/maisonneue-light-webfont.eot");
-  src: url("Fonts/maisonneue-light-webfont.eot?#iefix") format("embedded-opentype"), url("Fonts/maisonneue-light-webfont.woff") format("woff"), url("Fonts/maisonneue-light-webfont.ttf") format("truetype"), url("Fonts/maisonneue-light-webfont.svg#maison") format("svg"); }
+  src: url("fonts/maisonneue-light-webfont.eot");
+  src: url("fonts/maisonneue-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/maisonneue-light-webfont.woff") format("woff"), url("fonts/maisonneue-light-webfont.ttf") format("truetype"), url("fonts/maisonneue-light-webfont.svg#maison") format("svg"); }
 @font-face {
   font-family: maisonbold;
   font-weight: normal;
   font-style: normal;
-  src: url("Fonts/maisonneuebold-webfont.eot");
-  src: url("Fonts/maisonneuebold-webfont.eot?#iefix") format("embedded-opentype"), url("Fonts/maisonneuebold-webfont.woff") format("woff"), url("Fonts/maisonneuebold-webfont.ttf") format("truetype"), url("Fonts/maisonneuebold-webfont.svg#maisonbold") format("svg"); }
+  src: url("fonts/maisonneuebold-webfont.eot");
+  src: url("fonts/maisonneuebold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/maisonneuebold-webfont.woff") format("woff"), url("fonts/maisonneuebold-webfont.ttf") format("truetype"), url("fonts/maisonneuebold-webfont.svg#maisonbold") format("svg"); }
 /* ==========================================================================
    Reset
    ========================================================================== */

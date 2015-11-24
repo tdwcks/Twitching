@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta charset=utf-8 />
-<title>Political Twitching</title>
+<title>Strangers Journey → Notes from inside Westminster</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
@@ -21,7 +21,7 @@
   <div class="map-legend inactive">
 
       <ul>
-          <h4>Political Twitching</h4>
+          <h4>Strangers Journey</h4>
           <div class="eye-icon"></div>
           <li class="tory">Conservative</li>
           <li class="labour">Labour</li>
@@ -39,7 +39,7 @@
 
       <div class="sidebar-container">
 
-          <h1 class="tory">Political Twitching</h1>
+          <h1 class="tory">Strangers Joruney</h1>
 
           <nav>
               <ul>

@@ -77,7 +77,7 @@ var mq = window.matchMedia( "(min-width: 420px)" );
 if (mq.matches){
   var map = L.mapbox.map('map', 'twcks.cigjmczaj005cu1kr594jt49m', { zoomControl: false }).setView([51.499540, -0.123510], 16);
 } else {
-  var map = L.mapbox.map('map', 'twcks.cigjmczaj005cu1kr594jt49m', { zoomControl: false }).setView([51.49956655, -0.12568831], 14);
+  var map = L.mapbox.map('map', 'twcks.cigjmczaj005cu1kr594jt49m', { zoomControl: false }).setView([51.49956655, -0.12568831], 16);
 };
 
 var info = document.getElementById('poltical-holder');

@@ -53,7 +53,7 @@
 
           <h4>This is a map of experiences and points of interest accross Westminster.</h4>
 
-          <p>If you think you can help me add some more <a href="mailto:tom@tdwcks.co">Get In Touch Here</a></p>
+          <p>If you think you can help me add more <a href="mailto:tom@tdwcks.co">Get In Touch Here</a></p>
 
       </div>
 
@@ -75,9 +75,9 @@ L.mapbox.accessToken = 'pk.eyJ1IjoidHdja3MiLCJhIjoiY2lnam1kMHJiMDA1MHQzbHVoYW1pM
 var mq = window.matchMedia( "(min-width: 420px)" );
 
 if (mq.matches){
-  var map = L.mapbox.map('map', 'twcks.cigjmczaj005cu1kr594jt49m', { zoomControl: false }).setView([51.499540, -0.123510], 24);
+  var map = L.mapbox.map('map', 'twcks.cigjmczaj005cu1kr594jt49m', { zoomControl: false }).setView([51.499540, -0.123510], 16);
 } else {
-  var map = L.mapbox.map('map', 'twcks.cigjmczaj005cu1kr594jt49m', { zoomControl: false }).setView([51.49956655, -0.12568831], 17);
+  var map = L.mapbox.map('map', 'twcks.cigjmczaj005cu1kr594jt49m', { zoomControl: false }).setView([51.49956655, -0.12568831], 12);
 };
 
 var info = document.getElementById('poltical-holder');

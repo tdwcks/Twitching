@@ -299,7 +299,7 @@ nav {
       margin-left: 10px;
       width: 39px;
       height: 18px;
-      background-image: url("../img/eye-active.svg");
+      background-image: url("../img/i-active.svg");
       background-repeat: no-repeat;
       background-size: 100% 100%;
       background-position: 0 0;
@@ -312,7 +312,7 @@ nav {
       height: 30px;
       margin-bottom: 0; }
       .map-legend.inactive .eye-icon {
-        background-image: url("../img/eye.svg"); }
+        background-image: url("../img/i.svg"); }
       .map-legend.inactive ul li {
         padding: 0 5px;
         display: none; } }

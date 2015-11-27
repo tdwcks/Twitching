@@ -51,7 +51,7 @@
 
       <div id="about-holder" class="poltical-holder active">
 
-          <h4>This is a map of experiences and points of interest accross Westminster. </h4>
+          <h4>This is a map of experiences and points of interest accross Westminster.</h4>
 
           <p>If you think you can help me add some more <a href="mailto:tom@tdwcks.co">Get In Touch Here</a></p>
 

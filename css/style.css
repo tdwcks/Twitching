@@ -89,6 +89,17 @@ table {
 .green:before {
   background: #01B275; }
 
+.division-bell:before {
+  background-image: url("../img/bell-icon.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 20px;
+  height: 20px;
+  background-position: 0 0; }
+
+.other:before {
+  background: #6D6D6D; }
+
 /* ==========================================================================
    Typography
    ========================================================================== */

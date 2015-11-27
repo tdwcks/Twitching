@@ -21,14 +21,13 @@
   <div class="map-legend inactive">
 
       <ul>
-          <h4>Strangerzz Journey</h4>
+          <h4>Strangers Journey</h4>
           <div class="eye-icon"></div>
           <li class="tory">Conservative</li>
           <li class="labour">Labour</li>
-          <li class="snp">SNP</li>
-          <li class="libdem">Lib Dem</li>
-          <li class="green">Green</li>
-
+          <li class="snp">SNP</li>  
+          <li class="other">Other</li> 
+          <li class="division-bell">Division Bell</li>
       </ul>
 
   </div>
@@ -92,7 +91,7 @@ var geoJson = [{
     "properties": {
         "name": "Nigel Lawson",
         "date": "28th October 2015",
-        "description": "Situated opposite the Welsh Bridge and readily identifiable by the collection of allotted items on display; from old street signs to a Victorian chest and most notably a chesterfield chair or two! If your not encapsulated by this then you should surely be intrigued by the uniqueness of the name. The hand painted signage is visible throughout the vast stairways and hidden nooks and crannies. </p><p> There’s rarely two items the same (chesterfield an exception) and an overwhelming amount of treasures to be uncovered. Ranging from antiques, vintage and secondhand items to even a ‘Kermit’ the frog amusement ride. If you favour upcycling or just wish to collect the weird and wonderful, this place is definitely worth a visit! You are likely to be greeted outside by Jim and Murphy (the border terrier) and will certainly get a warm and friendly welcome on entering. The man and dog duo add character to this charming place and there’s always a bargain to be had and an opportunity to haggle!",
+        "description": "Across from Westminster Hall is a gift shop and tea room, I found myself sitting down there with a cappuccino after Prime Ministers Question time. After a while a Documentary film crew sat down on the table next to me. I started to talk to the camera man Nigel.  </p><p>He was about to interview Nigel Lawson for a documentary about Britain leaving the EU. I asked if he needed a hand carrying any of the equipment. They did and so I found myself in a media room opposite Margaret Thatchers old office with her chancellor.",
         "icon": {
             "iconUrl": "img/tory-icon.png",
             "iconSize": [30, 30], // size of the icon
@@ -103,14 +102,14 @@ var geoJson = [{
 },
 {
     type: 'Feature',
-    "geometry": { "type": "Point", "coordinates": [-0.124712, 51.499219]},
+    "geometry": { "type": "Point", "coordinates": [-0.121880, 51.506245]},
     "properties": {
-        "name": "Yvette Cooper",
-        "date": "21st October 2015",
-        "description": "An overwhelming amount of treasures to be uncovered. Ranging from antiques, vintage and secondhand items to even a ‘Kermit’ the frog amusement ride. If you favour upcycling or just wish to collect the weird and wonderful, this place is definitely worth a visit! You are likely to be greeted outside by Jim and Murphy (the border terrier) and will certainly get a warm and friendly welcome on entering. The man and dog duo add character to this charming place and there’s always a bargain to be had and an opportunity to haggle!",
+        "name": "Division Bell - Hispaniola Restaurant",
+        "date": "-",
+        "description": "The bell is used in the immediate neighbourhood of Palace of Westminster (which houses Parliament) to signal that a division is occurring and that members of the House of Commons or of the House of Lords have eight minutes to get to their chosen Division Lobby to vote for or against the resolution. </p><p>As some Members may be in nearby offices, restaurants, pubs or shops, some of these have their own division bells connected to those in the Houses of Parliament; others will use a system of pagers co-ordinated by the Whip's office of each party.",
         "icon": {
-            "iconUrl": "img/labour-icon.png",
-            "iconSize": [30, 30], // size of the icon
+            "iconUrl": "img/bell-icon.png",
+            "iconSize": [17, 17], // size of the icon
             "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
             "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
         }
@@ -119,38 +118,230 @@ var geoJson = [{
 },
 {
     type: 'Feature',
-    "geometry": { "type": "Point", "coordinates": [-0.124412, 51.499526]},
+    "geometry": { "type": "Point", "coordinates": [-0.131085, 51.500034]},
     "properties": {
-        "name": "Alex Salmond",
-        "date": "28th October 2015",
-        "description": "If your not encapsulated by this then you should surely be intrigued by the uniqueness of the name. The hand painted signage is visible throughout the vast stairways and hidden nooks and crannies. </p><p> There’s rarely two items the same (chesterfield an exception) and an overwhelming amount of treasures to be uncovered. Ranging from antiques, vintage and secondhand items to even a ‘Kermit’ the frog amusement ride. If you favour upcycling or just wish to collect the weird and wonderful, this place is definitely worth a visit! You are likely to be greeted outside by Jim and Murphy (the border terrier) and will certainly get a warm and friendly welcome on entering. The man and dog duo add character to this charming place and there’s always a bargain to be had and an opportunity to haggle!",
+        "name": "Division Bell - St. Ermin's Hotel",
+        "date": "-",
+        "description": "The bell is used in the immediate neighbourhood of Palace of Westminster (which houses Parliament) to signal that a division is occurring and that members of the House of Commons or of the House of Lords have eight minutes to get to their chosen Division Lobby to vote for or against the resolution. </p><p>As some Members may be in nearby offices, restaurants, pubs or shops, some of these have their own division bells connected to those in the Houses of Parliament; others will use a system of pagers co-ordinated by the Whip's office of each party.",
         "icon": {
-            "iconUrl": "img/snp-icon.png",
-            "iconSize": [30, 30], // size of the icon
+            "iconUrl": "img/bell-icon.png",
+            "iconSize": [17, 17], // size of the icon
             "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
             "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
         }
     }
-
 },
 {
     type: 'Feature',
-    "geometry": { "type": "Point", "coordinates": [-0.124776, 51.499112]},
+    "geometry": { "type": "Point", "coordinates": [-0.137608, 51.498277]},
     "properties": {
-        "name": "Nick Clegg",
-        "date": "28th October 2015",
-        "description": "The hand painted signage is visible throughout the vast stairways and hidden nooks and crannies. There’s rarely two items the same (chesterfield an exception) and an overwhelming amount of treasures to be uncovered. Ranging from antiques, vintage and secondhand items to even a ‘Kermit’ the frog amusement ride. If you favour upcycling or just wish to collect the weird and wonderful, this place is definitely worth a visit! You are likely to be greeted outside by Jim and Murphy (the border terrier) and will certainly get a warm and friendly welcome on entering. The man and dog duo add character to this charming place and there’s always a bargain to be had and an opportunity to haggle!",
+        "name": "Division Bell - St. James' Court, A Taj Hotel",
+        "date": "-",
+        "description": "The bell is used in the immediate neighbourhood of Palace of Westminster (which houses Parliament) to signal that a division is occurring and that members of the House of Commons or of the House of Lords have eight minutes to get to their chosen Division Lobby to vote for or against the resolution. </p><p>As some Members may be in nearby offices, restaurants, pubs or shops, some of these have their own division bells connected to those in the Houses of Parliament; others will use a system of pagers co-ordinated by the Whip's office of each party.",
         "icon": {
-            "iconUrl": "img/lib-icon.png",
-            "iconSize": [30, 30], // size of the icon
+            "iconUrl": "img/bell-icon.png",
+            "iconSize": [17, 17], // size of the icon
             "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
             "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
         }
     }
-
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.137608, 51.498277]},
+    "properties": {
+        "name": "Division Bell - St. James' Court, A Taj Hotel",
+        "date": "-",
+        "description": "The bell is used in the immediate neighbourhood of Palace of Westminster (which houses Parliament) to signal that a division is occurring and that members of the House of Commons or of the House of Lords have eight minutes to get to their chosen Division Lobby to vote for or against the resolution. </p><p>As some Members may be in nearby offices, restaurants, pubs or shops, some of these have their own division bells connected to those in the Houses of Parliament; others will use a system of pagers co-ordinated by the Whip's office of each party.",
+        "icon": {
+            "iconUrl": "img/bell-icon.png",
+            "iconSize": [17, 17], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.124111, 51.506071]},
+    "properties": {
+        "name": "Division Bell - National Liberal Club",
+        "date": "-",
+        "description": "The bell is used in the immediate neighbourhood of Palace of Westminster (which houses Parliament) to signal that a division is occurring and that members of the House of Commons or of the House of Lords have eight minutes to get to their chosen Division Lobby to vote for or against the resolution. </p><p>As some Members may be in nearby offices, restaurants, pubs or shops, some of these have their own division bells connected to those in the Houses of Parliament; others will use a system of pagers co-ordinated by the Whip's office of each party.",
+        "icon": {
+            "iconUrl": "img/bell-icon.png",
+            "iconSize": [17, 17], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.138112, 51.507774]},
+    "properties": {
+        "name": "Division Bell - Green's Restaurant and Oyster Bar",
+        "date": "-",
+        "description": "The bell is used in the immediate neighbourhood of Palace of Westminster (which houses Parliament) to signal that a division is occurring and that members of the House of Commons or of the House of Lords have eight minutes to get to their chosen Division Lobby to vote for or against the resolution. </p><p>As some Members may be in nearby offices, restaurants, pubs or shops, some of these have their own division bells connected to those in the Houses of Parliament; others will use a system of pagers co-ordinated by the Whip's office of each party.",
+        "icon": {
+            "iconUrl": "img/bell-icon.png",
+            "iconSize": [17, 17], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.133402, 51.500361]},
+    "properties": {
+        "name": "Division Bell - St. Stephens Club",
+        "date": "-",
+        "description": "The bell is used in the immediate neighbourhood of Palace of Westminster (which houses Parliament) to signal that a division is occurring and that members of the House of Commons or of the House of Lords have eight minutes to get to their chosen Division Lobby to vote for or against the resolution. </p><p>As some Members may be in nearby offices, restaurants, pubs or shops, some of these have their own division bells connected to those in the Houses of Parliament; others will use a system of pagers co-ordinated by the Whip's office of each party.",
+        "icon": {
+            "iconUrl": "img/bell-icon.png",
+            "iconSize": [17, 17], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.125774, 51.502038]},
+    "properties": {
+        "name": "Division Bell - Red Lion Public House",
+        "date": "-",
+        "description": "The bell is used in the immediate neighbourhood of Palace of Westminster (which houses Parliament) to signal that a division is occurring and that members of the House of Commons or of the House of Lords have eight minutes to get to their chosen Division Lobby to vote for or against the resolution. </p><p>As some Members may be in nearby offices, restaurants, pubs or shops, some of these have their own division bells connected to those in the Houses of Parliament; others will use a system of pagers co-ordinated by the Whip's office of each party.",
+        "icon": {
+            "iconUrl": "img/bell-icon.png",
+            "iconSize": [17, 17], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.129776, 51.497389]},
+    "properties": {
+        "name": "Division Bell - The Cinnamon Club",
+        "date": "-",
+        "description": "The bell is used in the immediate neighbourhood of Palace of Westminster (which houses Parliament) to signal that a division is occurring and that members of the House of Commons or of the House of Lords have eight minutes to get to their chosen Division Lobby to vote for or against the resolution. </p><p>As some Members may be in nearby offices, restaurants, pubs or shops, some of these have their own division bells connected to those in the Houses of Parliament; others will use a system of pagers co-ordinated by the Whip's office of each party.",
+        "icon": {
+            "iconUrl": "img/bell-icon.png",
+            "iconSize": [17, 17], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.124358, 51.505757]},
+    "properties": {
+        "name": "Division Bell - Royal Horseguard Hotel",
+        "date": "-",
+        "description": "The bell is used in the immediate neighbourhood of Palace of Westminster (which houses Parliament) to signal that a division is occurring and that members of the House of Commons or of the House of Lords have eight minutes to get to their chosen Division Lobby to vote for or against the resolution. </p><p>As some Members may be in nearby offices, restaurants, pubs or shops, some of these have their own division bells connected to those in the Houses of Parliament; others will use a system of pagers co-ordinated by the Whip's office of each party.",
+        "icon": {
+            "iconUrl": "img/bell-icon.png",
+            "iconSize": [17, 17], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.137908, 51.498865]},
+    "properties": {
+        "name": "Division Bell - Quillon Restaurant",
+        "date": "-",
+        "description": "The bell is used in the immediate neighbourhood of Palace of Westminster (which houses Parliament) to signal that a division is occurring and that members of the House of Commons or of the House of Lords have eight minutes to get to their chosen Division Lobby to vote for or against the resolution. </p><p>As some Members may be in nearby offices, restaurants, pubs or shops, some of these have their own division bells connected to those in the Houses of Parliament; others will use a system of pagers co-ordinated by the Whip's office of each party.",
+        "icon": {
+            "iconUrl": "img/bell-icon.png",
+            "iconSize": [17, 17], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.137200, 51.484977]},
+    "properties": {
+        "name": "Division Bell - Pomegranate Restaurant",
+        "date": "-",
+        "description": "The bell is used in the immediate neighbourhood of Palace of Westminster (which houses Parliament) to signal that a division is occurring and that members of the House of Commons or of the House of Lords have eight minutes to get to their chosen Division Lobby to vote for or against the resolution. </p><p>As some Members may be in nearby offices, restaurants, pubs or shops, some of these have their own division bells connected to those in the Houses of Parliament; others will use a system of pagers co-ordinated by the Whip's office of each party.",
+        "icon": {
+            "iconUrl": "img/bell-icon.png",
+            "iconSize": [17, 17], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.140290, 51.493114]},
+    "properties": {
+        "name": "Division Bell - Kyms Restaurant",
+        "date": "-",
+        "description": "The bell is used in the immediate neighbourhood of Palace of Westminster (which houses Parliament) to signal that a division is occurring and that members of the House of Commons or of the House of Lords have eight minutes to get to their chosen Division Lobby to vote for or against the resolution. </p><p>As some Members may be in nearby offices, restaurants, pubs or shops, some of these have their own division bells connected to those in the Houses of Parliament; others will use a system of pagers co-ordinated by the Whip's office of each party.",
+        "icon": {
+            "iconUrl": "img/bell-icon.png",
+            "iconSize": [17, 17], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.126364, 51.496902]},
+    "properties": {
+        "name": "Division Bell - Quirinalet",
+        "date": "-",
+        "description": "The bell is used in the immediate neighbourhood of Palace of Westminster (which houses Parliament) to signal that a division is occurring and that members of the House of Commons or of the House of Lords have eight minutes to get to their chosen Division Lobby to vote for or against the resolution. </p><p>As some Members may be in nearby offices, restaurants, pubs or shops, some of these have their own division bells connected to those in the Houses of Parliament; others will use a system of pagers co-ordinated by the Whip's office of each party.",
+        "icon": {
+            "iconUrl": "img/bell-icon.png",
+            "iconSize": [17, 17], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.127223, 51.495325]},
+    "properties": {
+        "name": "Division Bell - Marquis of Granby",
+        "date": "-",
+        "description": "The bell is used in the immediate neighbourhood of Palace of Westminster (which houses Parliament) to signal that a division is occurring and that members of the House of Commons or of the House of Lords have eight minutes to get to their chosen Division Lobby to vote for or against the resolution. </p><p>As some Members may be in nearby offices, restaurants, pubs or shops, some of these have their own division bells connected to those in the Houses of Parliament; others will use a system of pagers co-ordinated by the Whip's office of each party.",
+        "icon": {
+            "iconUrl": "img/bell-icon.png",
+            "iconSize": [17, 17], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.129765, 51.500482]},
+    "properties": {
+        "name": "Division Bell - Westminster Arms",
+        "date": "-",
+        "description": "The bell is used in the immediate neighbourhood of Palace of Westminster (which houses Parliament) to signal that a division is occurring and that members of the House of Commons or of the House of Lords have eight minutes to get to their chosen Division Lobby to vote for or against the resolution. </p><p>As some Members may be in nearby offices, restaurants, pubs or shops, some of these have their own division bells connected to those in the Houses of Parliament; others will use a system of pagers co-ordinated by the Whip's office of each party.",
+        "icon": {
+            "iconUrl": "img/bell-icon.png",
+            "iconSize": [17, 17], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
 }
-
-    // Add Another Point
+  // Add Another Point
 ];
 
 

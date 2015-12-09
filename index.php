@@ -53,8 +53,12 @@
 
           <h4>This is a map of experiences and points of interest accross Westminster.</h4>
 
-          <p>If you think you can help me add more <a href="mailto:tom@tdwcks.co">Get In Touch Here</a></p>
+          <p>The term stranger is the traditional way of referring to someone physically present in the Palace of Westminster who is neither a member of parliament nor a parliamentary official.</p>
 
+          <p>Throughout the last couple of months (November - <? echo date('F'); ?>) I have taken the role of the Stranger as a way of trying to understand the english political system.</p>
+
+          <p>If you think you can help me add more <a href="mailto:tom@tdwcks.co">Get In Touch Here</a></p>
+          
       </div>
 
       <div id="poltical-holder" class="poltical-holder">
@@ -80,6 +84,8 @@ if (mq.matches){
   var map = L.mapbox.map('map', 'twcks.cigjmczaj005cu1kr594jt49m', { zoomControl: false }).setView([51.49956655, -0.12568831], 15);
 };
 
+var geolocate = document.getElementById('geolocate');
+
 var info = document.getElementById('poltical-holder');
 var myLayer = L.mapbox.featureLayer().addTo(map);
 
@@ -87,7 +93,7 @@ var geoJson = [{
     type: 'Feature',
     "geometry": { "type": "Point", "coordinates": [-0.125260,51.499140]},
     "properties": {
-        "name": "Nigel Lawson",
+        "name": "Lord Lawson",
         "date": "28th October 2015",
         "description": "Across from Westminster Hall is a gift shop and tea room, I found myself sitting down there with a cappuccino after Prime Ministers Question time. After a while a Documentary film crew sat down on the table next to me. I started to talk to the camera man Nigel.  </p><p>He was about to interview Nigel Lawson for a documentary about Britain leaving the EU. I asked if he needed a hand carrying any of the equipment. They did and so I found myself in a media room opposite Margaret Thatchers old office with her chancellor.",
         "icon": {
@@ -311,6 +317,126 @@ var geoJson = [{
 },
 {
     type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.1249527, 51.50155]},
+    "properties": {
+        "name": "Jason McCartney MP",
+        "date": "1st December 2015",
+        "description": "I arranged to meet Jason McCartney in Portculis House here are some interesting snippets from the interview:</p><p>- At a carpark he will always allow someone else to go first because he get’s recognised constantly aware of how it looks.</p><p>- Challenged Nick Robinson about why he says MP’s are going for their 7 weeks summer holidays. JM “Most people will go away for a couple of weeks but the rest will be working” NR: “I know that it’s just something we say.”</p><p>- They work for you simplifies too much, when tomorrow he votes for air strikes it won’t show more nuanced question.</p><p>- Bercow needs to stand up for politicians and politics - Should be the Shop Steward.",
+        "icon": {
+           "iconUrl": "img/tory-icon.png",
+            "iconSize": [30, 30], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.125924, 51.49692]},
+    "properties": {
+        "name": "Andrew Neil",
+        "date": "3rd December 2015",
+        "description": "I was walking out of 4 Millbank which is where the Daily Politics is filmed, Andrew Neil was just ahead of me. </p><p> I caught him up and said “Excuse me Mr Neil very sorry to bother you but just wanted to say how much I enjoyed your Monologue at the start of This Week.” He looked at me and smiled with his very bright white teeth and said “Ah Thank you very much”",
+        "icon": {
+           "iconUrl": "img/other-icon.png",
+            "iconSize": [30, 30], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.124347, 51.500221]},
+    "properties": {
+        "name": "Ed Milliband MP",
+        "date": "7th December 2015",
+        "description": "I was sitting inside Westminster Hall on a bench.</p><p>Ed Miliband walked in to the hall and climbed up the stairs towards a room from which was playing christmas music.",
+        "icon": {
+           "iconUrl": "img/labour-icon.png",
+            "iconSize": [30, 30], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.125892, 51.496514]},
+    "properties": {
+        "name": "Leanne Wood AM",
+        "date": "7th December 2015",
+        "description": "Inside 4 Millbank downstairs from ITN and the BBC is a coffee shop where politicans go for refreshment before media interviews.</p><p>Leanne Wood was on a sofa surrounded by her special advisors drinking a cappucino.",
+        "icon": {
+           "iconUrl": "img/other-icon.png",
+            "iconSize": [30, 30], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.124229, 51.499967]},
+    "properties": {
+        "name": "Tom Watson MP",
+        "date": "7th December 2015",
+        "description": "We were walking down the stairs from St Stephens Chapel and Tom Watson was walking in the opposite direction from the room filled with christmas music.</p><p>He knew we recognised us but he continued walking wanting to get on with his day.",
+        "icon": {
+           "iconUrl": "img/labour-icon.png",
+            "iconSize": [30, 30], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.124229, 51.499967]},
+    "properties": {
+        "name": "Tom Watson MP",
+        "date": "7th December 2015",
+        "description": "We were walking down the stairs from St Stephens Chapel and Tom Watson was walking in the opposite direction from the room filled with christmas music.</p><p>He knew we recognised him but he continued walking to continue his evening uninterupted.",
+        "icon": {
+           "iconUrl": "img/labour-icon.png",
+            "iconSize": [30, 30], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.125817, 51.498324]},
+    "properties": {
+        "name": "Sadiq Khan",
+        "date": "25th November 2015",
+        "description": "It was Budget day and I was walking in the area between college green and westminster. High profile politicians were constantly walking to college green.</p><p>Sadiq Khan came towards me and I asked him how becoming mayor was going. He looked grumpy and said “Alright Thanks” then his special advisor ushered me away.",
+        "icon": {
+           "iconUrl": "img/labour-icon.png",
+            "iconSize": [30, 30], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
+    "geometry": { "type": "Point", "coordinates": [-0.125785, 51.498665]},
+    "properties": {
+        "name": "Lord Prescott",
+        "date": "1st December 2015",
+        "description": "I was walking from Four Millbank towards Parliament, Baron Prescott, of Kingston upon Hull was on the road opposite. He waved at me and I waved back.",
+        "icon": {
+           "iconUrl": "img/labour-icon.png",
+            "iconSize": [30, 30], // size of the icon
+            "iconAnchor": [30, 30], // point of the icon which will correspond to marker's location
+            "popupAnchor": [-15, -40], // point from which the popup should open relative to the iconAnchor
+        }
+    }
+},
+{
+    type: 'Feature',
     "geometry": { "type": "Point", "coordinates": [-0.129765, 51.500482]},
     "properties": {
         "name": "Division Bell - Westminster Arms",
@@ -327,13 +453,38 @@ var geoJson = [{
   // Add Another Point
 ];
 
+// Geolocation Fun! 
 
+
+
+function addGeoJsonFeatureAndUpdate(featureIn){
+    geoJson.push(featureIn);
+    myLayer.setGeoJSON(geoJson);
+    myLayer.addTo(map)
+}
+
+function getCenter(queryString){
+    $.getJSON('http://api.tiles.mapbox.com/v4/geocode/mapbox.places/' +queryString + '.json?' + 'access_token=pk.eyJ1IjoidGR3Y2tzIiwiYSI6IlhwMGlGR28ifQ.irq5Rbn1WvGb_VIwn1auNA',"", function(resp,status) { 
+        centerFeature = resp.features[0];
+        zoomMap({
+            lat: centerFeature.center[1],
+            lon: centerFeature.center[0]
+        });
+    });
+};
+function zoomMap(center){
+   map.setView([center.lat, center.lon], 17);
+   mapCenter = center
+}
+
+function formSubmitZoom(){
+    getCenter($("#sign-up-location").val())
+};
 
 // Add custom popups to each using our custom feature properties
 myLayer.on('layeradd', function(e) {
     var marker = e.layer,
         feature = marker.feature;
-
 
 // Create custom popup content
 var popupContent =  '<div>' +
@@ -390,8 +541,6 @@ myLayer.on('click',function(e) {
 
     info.innerHTML = content;
 });
-
-
 
 // Add features to the map
 myLayer.setGeoJSON(geoJson);

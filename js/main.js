@@ -22,4 +22,7 @@ $(function(){
 		$('#poltical-holder').removeClass('active');
 	});
 
+
+
 });
+

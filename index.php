@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta charset=utf-8 />
-<title>Strangers Journey → Notes from the Westminster Bubble</title>
+<title>Stranger's Journey → Notes from the Westminster Bubble</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
@@ -21,7 +21,7 @@
   <div class="map-legend inactive">
 
       <ul>
-          <h4>Strangers Journey</h4>
+          <h4>Stranger's Journey</h4>
           <div class="eye-icon"></div>
           <li class="tory">Conservative</li>
           <li class="labour">Labour</li>
@@ -38,7 +38,7 @@
 
       <div class="sidebar-container">
 
-          <h1 class="tory">Strangers Journey</h1>
+          <h1 class="tory">Stranger's Journey</h1>
 
           <nav>
               <ul>
